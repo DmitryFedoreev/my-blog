@@ -1,0 +1,8 @@
+site_name: Dmitry Blog
+site_url: https://dmitry.github.io/my-blog/
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
