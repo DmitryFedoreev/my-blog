@@ -1,6 +1,6 @@
 # Как использовать контент-маркетинг
 
-![Контент-маркетинг](path/to/article-image1.jpg)
+![Контент-маркетинг](photo/bob-brewer-FD-6Q3t7Mp0-unsplash.jpg)
 
 ## Введение
 

@@ -7,13 +7,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
-extra_css:
-  - 'assets/extra.css'
-
 nav:
   - Главная: index.md
   - Статьи:
-      - Все статьи: articles/index.md
       - Контент-маркетинг: articles/article1.md
       - Успешные кейсы в SMM: articles/article2.md
       - SEO для малого бизнеса: articles/article3.md
