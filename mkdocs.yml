@@ -1,8 +1,42 @@
-site_name: Dmitry Fedoreev
-site_url: https://dmitry.github.io/blog/
-theme:
-  name: material
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+site_name: 'DigitalHub' 
+site_url: https://dmitry.github.io/blog/ 
+theme: 
+  name: material 
+  logo: 'assets/images/new_logo.png' 
+  palette: 
+    primary: blue gray 
+    scheme: default 
+    accent: Dark Blue 
+
+nav:   
+  - Главная: index.md 
+  - Статьи:   
+      - Как увеличить количество подписчиков на YouTube: articles/blog/articles1.md 
+      - Как повысить продажи на email-рассылках: articles/blog/articles2.md       
+      - Как запустить рекламу в Яндекс Директ: articles/blog/articles3.md 
+  - Marketing tools: 
+      - Генератор кратких ссылок: marketing-tools/short-url-generator.md
+      - Генератор UTM-меток: marketing-tools/utm-generator.md
+
+extra_css: 
+  - assets/styles.css 
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+ 
+copyright: Copyright &copy; 2024 Dmitry Fedoreev 
+ 
+extra: 
+  generator: 
+    false 
+
+plugins:  
+  - tags 
+ 
+extra:
+  social: 
+    - icon: fontawesome/brands/github 
+      link: https://github.com/DmitryFedoreev/
+    - icon: fontawesome/solid/envelope 
+      link: mailto:fedoreev.doc@gmail.com 
+    - icon: fontawesome/brands/instagram 
+      link: https://instagram.com/dmitry.fedoreev
+

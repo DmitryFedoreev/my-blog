@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://dmitry.github.io/blog/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/articles/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/articles/blog/articles1/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/articles/blog/articles2/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/articles/blog/articles3/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/marketing-tools/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/marketing-tools/short-url-generator/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+    <url>
+         <loc>https://dmitry.github.io/blog/marketing-tools/utm-generator/</loc>
+         <lastmod>2024-09-26</lastmod>
+    </url>
+</urlset>

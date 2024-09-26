@@ -1,1 +1,44 @@
-# Статьи
+<div class="banner">  
+  <div class="profile-photo">  
+    <img src="assets/images/prof_photo.jpg" alt="Фото профиля">  
+       <p> 
+      <strong>Привет, я — Дмитрий. Интернет-маркетолог, эксперт.</strong><br> 
+      Вместе разбираемся в маркетинговых хитростях и делаем результаты реальными. 
+    </p>   
+  </div>  
+  <div class="social-links" style="text-align: center;"> 
+  <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub"> 
+    <i class="fab fa-github"></i> 
+  </a> 
+  <a href="https://t.me/dmitryfedoreev" target="_blank" title="Telegram"> 
+    <i class="fab fa-telegram"></i> 
+  </a> 
+  <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера"> 
+    <i class="fab fa-hacker-news"></i> <!-- Используйте иконку, которая наиболее близка по смыслу --> 
+  </a> 
+</div>
+</div>  
+ 
+## Последние статьи  
+ 
+<div class="articles-grid">  
+  <div class="article">  
+    <img src="assets/images/post 1.JPG" alt="Обложка статьи 1">  
+    <h3><a href="articles/blog/articles1.md">Как увеличить количество подписчиков на YouTube: личный опыт</a></h3>  
+  </div>  
+  <div class="article">  
+    <img src="assets/images/post2.JPG" alt="Обложка статьи 2">  
+    <h3><a href="articles/article2.md">Руководство: Как повысить продажи на email-рассылках</a></h3>  
+  </div>  
+  <div class="article">  
+    <img src="assets/images/post3.JPG" alt="Обложка статьи 3">  
+    <h3><a href="articles/article3.md">Как запустить рекламу в Яндекс Директ</a></h3>  
+  </div>  
+  </div>  
+<div class="view-all-container">   
+    <div class="button-container"> 
+        <a href="articles" class="view-all-btn">Посмотреть все</a> 
+    </div> 
+</div>
+</div>
+
