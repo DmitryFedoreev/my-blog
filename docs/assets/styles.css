@@ -1,3 +1,127 @@
+/* Подсказки */
+.tooltip:hover::after {
+    content: attr(title); /* Содержимое будет содержимым атрибута title */
+    position: absolute; /* Позиционируем подсказку */
+    background-color: #ffffff; /* Цвет фона подсказки */
+    border: 1px solid #ccc; /* Обводка подсказки */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 5px; /* Отступ внутри подсказки */
+    z-index: 100; /* Уровень наложения для видимости */
+    white-space: nowrap; /* Не переносим текст */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень подсказки */
+}
+
+
+.tooltip {
+    display: inline-block; /* Отображаем как встроенный блок */
+    margin-left: 5px; /* Отступ слева */
+    color: #007BFF; /* Цвет текста подсказки */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+
+/* Кнопка "Показать все" */
+.view-all-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.view-all-btn {
+    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
+    padding: 10px 20px;
+    background-color: #ebebeb; /* Цвет фона кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+.view-all-btn:hover {
+    background-color: #cfcfcf; /* Цвет фона при наведении */
+}
+
+
+/* Подключение шрифта Montserrat */
+.banner h2 {
+    text-align: center; /* Центрируем заголовок */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
+.url-generator {
+    align-items: center; /* Центрирование по горизонтали */
+    padding: 20px; /* Отступы внутри контейнера */
+    border-radius: 5px; /* Закругленные углы */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+
+.input-group {
+    width: 100%; /* Ширина 100% для группировки элементов */
+    max-width: 500px; /* Ограничение максимальной ширины */
+    margin-bottom: 15px; /* Отступ снизу для группировки элементов */
+}
+
+
+.input-group input {
+    width: 100%; /* Ширина 100% для заполнения контейнера */
+    padding: 10px; /* Отступы внутри поля ввода */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 5px; /* Закругленные углы */
+    transition: border-color 0.3s; /* Плавный переход для рамки */
+}
+
+
+.input-group input:focus {
+    border-color: #3f51b5; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартное обрамление */
+}
+
+
+.tooltip {
+    margin-left: 5px; /* Отступ слева для подсказки */
+    cursor: help; /* Курсор-указатель для подсказки */
+    color: #888; /* Цвет подсказки */
+    font-size: 14px; /* Размер шрифта для подсказки */
+}
+
+
+.btn {
+    display: inline-block; /* Отображение в строку */
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    background-color: #007BFF; /* Цвет фона (синий) */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор-указатель */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    margin-top: 10px; /* Отступ сверху для кнопки */
+}
+
+
+.btn:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+
+.copy-icon {
+    cursor: pointer; /* Курсор-указатель для иконки */
+    margin-left: 10px; /* Отступ слева от ссылки */
+    font-size: 15px; /* Размер шрифта для иконки */
+    color: #3f51b5; /* Цвет иконки */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+
+.copy-icon:hover {
+    color: #303f9f; /* Цвет при наведении */
+}
+
+
 /* Основные стили */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -146,133 +270,51 @@ form#utm-generator button:hover {
 }
 
 
-#generated-link {
-    margin-top: 20px;
-    font-size: 1.2em;
-    word-break: break-all; /* Перенос длинных слов */
-    text-align: center; /* Центрируем сгенерированную ссылку */
+#utm-link-result {
+    font-size: 18px; /* Размер текста результата */
+    font-weight: bold; /* Жирный текст результата */
+    margin-top: 20px; /* Отступ сверху для результата */
+    color: #333; /* Цвет текста */
 }
 
 
-/* Подсказки */
-.tooltip:hover::after {
-    content: attr(title); /* Содержимое будет содержимым атрибута title */
-    position: absolute; /* Позиционируем подсказку */
-    background-color: #ffffff; /* Цвет фона подсказки */
-    border: 1px solid #ccc; /* Обводка подсказки */
-    border-radius: 5px; /* Закругленные углы */
-    padding: 5px; /* Отступ внутри подсказки */
-    z-index: 100; /* Уровень наложения для видимости */
-    white-space: nowrap; /* Не переносим текст */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень подсказки */
-}
+/* Оптимизация под мобильные устройства */
+@media (max-width: 768px) {
+    .articles-grid {
+        grid-template-columns: 1fr; /* Одна колонка вместо трёх */
+    }
 
 
-.tooltip {
-    display: inline-block; /* Отображаем как встроенный блок */
-    margin-left: 5px; /* Отступ слева */
-    color: #007BFF; /* Цвет текста подсказки */
-    cursor: pointer; /* Указатель при наведении */
-}
+    form#utm-generator input {
+        width: 100%; /* Поля ввода занимают всю ширину */
+    }
 
 
-/* Кнопка "Показать все" */
-.view-all-container {
-    text-align: center;
-    margin-top: 20px;
-}
+    .banner {
+        padding: 20px; /* Уменьшаем отступы для мобильных */
+    }
 
 
-.view-all-btn {
-    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
-    padding: 10px 20px;
-    background-color: #ebebeb; /* Цвет фона кнопки */
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
+    .profile-photo img {
+        width: 80px; /* Уменьшаем размеры изображения для мобильных */
+        height: 80px;
+    }
 
 
-.view-all-btn:hover {
-    background-color: #cfcfcf; /* Цвет фона при наведении */
-}
+    .view-all-btn {
+        width: 100%; /* Кнопка занимает всю ширину */
+        padding: 15px; /* Увеличиваем отступы */
+    }
 
 
-/* Подключение шрифта Montserrat */
-.banner h2 {
-    text-align: center; /* Центрируем заголовок */
-    margin-bottom: 20px; /* Отступ снизу */
-}
+    .utm-generator input {
+        width: 100%; /* Поля ввода занимают всю ширину */
+        padding: 15px; /* Увеличиваем отступы */
+    }
 
 
-.url-generator {
-    align-items: center; /* Центрирование по горизонтали */
-    padding: 20px; /* Отступы внутри контейнера */
-    border-radius: 5px; /* Закругленные углы */
-    margin-top: 20px; /* Отступ сверху */
-}
-
-
-.input-group {
-    width: 100%; /* Ширина 100% для группировки элементов */
-    max-width: 500px; /* Ограничение максимальной ширины */
-    margin-bottom: 15px; /* Отступ снизу для группировки элементов */
-}
-
-
-.input-group input {
-    width: 100%; /* Ширина 100% для заполнения контейнера */
-    padding: 10px; /* Отступы внутри поля ввода */
-    font-size: 16px; /* Размер шрифта */
-    border: 1px solid #ccc; /* Рамка */
-    border-radius: 5px; /* Закругленные углы */
-    transition: border-color 0.3s; /* Плавный переход для рамки */
-}
-
-
-.input-group input:focus {
-    border-color: #3f51b5; /* Цвет рамки при фокусе */
-    outline: none; /* Убираем стандартное обрамление */
-}
-
-
-.tooltip {
-    margin-left: 5px; /* Отступ слева для подсказки */
-    cursor: help; /* Курсор-указатель для подсказки */
-    color: #888; /* Цвет подсказки */
-    font-size: 14px; /* Размер шрифта для подсказки */
-}
-
-
-.btn { 
-    display: inline-block; /* Отображение в строку */ 
-    padding: 10px 20px; /* Отступы */ 
-    font-size: 16px; /* Размер шрифта */ 
-    color: white; /* Цвет текста */ 
-    background-color: #007BFF; /* Цвет фона (синий) */ 
-    border: none; /* Без рамки */ 
-    border-radius: 5px; /* Закругленные углы */ 
-    cursor: pointer; /* Курсор-указатель */ 
-    transition: background-color 0.3s; /* Плавный переход цвета фона */ 
-    margin-top: 10px; /* Отступ сверху для кнопки */ 
-}
-
-
-.btn:hover {
-    background-color: #0056b3; /* Цвет фона при наведении */
-}
-
-
-.copy-icon {
-    cursor: pointer; /* Курсор-указатель для иконки */
-    margin-left: 10px; /* Отступ слева от ссылки */
-    font-size: 15px; /* Размер шрифта для иконки */
-    color: #3f51b5; /* Цвет иконки */
-    transition: color 0.3s; /* Плавный переход цвета */
-}
-
-
-.copy-icon:hover {
-    color: #303f9f; /* Цвет при наведении */
+    .utm-generator button {
+        width: 100%; /* Кнопка занимает всю ширину */
+        padding: 15px; /* Увеличиваем отступы */
+    }
 }
