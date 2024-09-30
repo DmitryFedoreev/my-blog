@@ -27,20 +27,20 @@
 }
 
 
-.view-all-btn {
+.view-all-btn {    
     display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
-    padding: 10px 20px;
-    background-color: #ebebeb; /* Цвет фона кнопки */
-    text-decoration: none;
+    padding: 10px 20px;    
+    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
+    border: 1px solid #afafaf; /* Добавляем границу */    
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    font-size: 16px;    
+    color: #afafaf; /* Цвет текста кнопки */
+    text-decoration: none;    
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
 }
-
-
-.view-all-btn:hover {
-    background-color: #cfcfcf; /* Цвет фона при наведении */
-}
+.view-all-btn:hover {    
+    background-color: #ccc; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */}
 
 
 /* Подключение шрифта Montserrat */
