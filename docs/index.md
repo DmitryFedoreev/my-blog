@@ -2,11 +2,11 @@
   <div class="profile-photo">  
     <img src="assets/images/prof_photo.jpg" alt="Фото профиля">  
        <p> 
-      <strong>Привет, я — Дмитрий. Интернет-маркетолог, эксперт.</strong><br> 
-      Вместе разбираемся в маркетинговых хитростях и делаем результаты реальными. 
+      <strong>Привет, я — Дмитрий, интернет-маркетолог.</strong><br> 
+      Это мое портфолио, здесь вы найдете полезные статьи о маркетинге, а также инструменты в разделе <em>Marketing Tools</em>. 
     </p>   
   </div>  
-  <div class="social-links" style="text-align: center;"> 
+  <div class="social-links" style="text-align: left;"> 
   <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub"> 
     <i class="fab fa-github"></i> 
   </a> 
@@ -14,12 +14,12 @@
     <i class="fab fa-telegram"></i> 
   </a> 
   <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера"> 
-    <i class="fab fa-hacker-news"></i> <!-- Используйте иконку, которая наиболее близка по смыслу --> 
+    <i class="fas fa-laptop-code"></i> <!-- Используйте иконку, которая наиболее близка по смыслу --> 
   </a> 
 </div>
 </div>  
  
-## Последнее
+## Недавние
  
 <div class="articles-grid">  
   <div class="article">  

@@ -14,13 +14,12 @@ nav:
       - Как увеличить количество подписчиков на YouTube: articles/blog/articles1.md 
       - Как повысить продажи на email-рассылках: articles/blog/articles2.md       
       - Как запустить рекламу в Яндекс Директ: articles/blog/articles3.md 
-  - Marketing tools: 
-      - Генератор кратких ссылок: marketing-tools/short-url-generator.md
-      - Генератор UTM-меток: marketing-tools/utm-generator.md
+  - Marketing tools: marketing-tools/index.md
 
 extra_css: 
   - assets/styles.css 
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+  - https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap
  
 copyright: Copyright &copy; 2024 Dmitry Fedoreev 
  

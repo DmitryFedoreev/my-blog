@@ -40,12 +40,13 @@
 }
 .view-all-btn:hover {    
     background-color: #ccc; /* Цвет фона при наведении */
-    color: #fff; /* Цвет текста при наведении */}
+    color: #fff; /* Цвет текста при наведении */
+}
 
 
 /* Подключение шрифта Montserrat */
 .banner h2 {
-    text-align: center; /* Центрируем заголовок */
+    text-align: left; /* Центрируем заголовок */
     margin-bottom: 20px; /* Отступ снизу */
 }
 
@@ -90,21 +91,21 @@
 
 
 .btn {
-    display: inline-block; /* Отображение в строку */
-    padding: 10px 20px; /* Отступы */
-    font-size: 16px; /* Размер шрифта */
-    color: white; /* Цвет текста */
-    background-color: #007BFF; /* Цвет фона (синий) */
-    border: none; /* Без рамки */
-    border-radius: 5px; /* Закругленные углы */
-    cursor: pointer; /* Курсор-указатель */
-    transition: background-color 0.3s; /* Плавный переход цвета фона */
-    margin-top: 10px; /* Отступ сверху для кнопки */
+    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
+    padding: 10px 20px;    
+    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
+    border: 1px solid #afafaf; /* Добавляем границу */    
+    border-radius: 5px;
+    font-size: 16px;    
+    color: #afafaf; /* Цвет текста кнопки */
+    text-decoration: none;    
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
 }
 
 
 .btn:hover {
-    background-color: #0056b3; /* Цвет фона при наведении */
+    background-color: #ccc; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
 }
 
 
@@ -141,8 +142,7 @@ body {
 
 /* Стили для баннера */
 .banner {
-    padding: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -150,24 +150,23 @@ body {
 .profile-photo img {
     width: 100px; /* Увеличенная ширина фотографии */
     height: 100px; /* Увеличенная высота фотографии */
-    border-radius: 50%; /* Круглая форма фото */
-    margin-bottom: 20px;
+    border-radius: 3%; /* Круглая форма фото */
 }
 
 
 .profile-photo {
-    max-width: 400px; /* Ограничиваем ширину блока */
-    margin: 0 auto; /* Центрируем блок */
-    text-align: center; /* Выравнивание текста по центру */
+    max-width: 1350px; /* Ограничиваем ширину блока */
+    margin: left; /* Центрируем блок */
+    text-align: left; /* Выравнивание текста по центру */
 }
 
 
 /* Ссылки на социальные сети */
 .social-links a {
-    margin: 0 10px;
+    margin-right: 10px;
     text-decoration: none;
     color: #1463D9;
-    font-weight: 700; /* Жирный шрифт для ссылок */
+    font-size: 20px;
 }
 
 
@@ -175,6 +174,10 @@ body {
     color: #97accc; /* При наведении */
 }
 
+/* Скрыть заголовок страницы */
+h1 {
+    display: none;
+}
 
 /* Сетка статей */
 .articles-grid {
@@ -205,11 +208,13 @@ body {
 
 /* Заголовки статей */
 .article h3 {
-    white-space: nowrap; /* Запрет на перенос текста */
+    display: -webkit-box; /* Поддержка для многострочного текста */    
+    -webkit-box-orient: vertical; /* Устанавливаем ориентацию на вертикальную */
+    -webkit-line-clamp: 2; /* Ограничиваем количество отображаемых строк до 2 */    
     overflow: hidden; /* Скрытие переполнения */
-    text-overflow: ellipsis; /* Добавление многоточия для скрытого текста */
-    max-width: 200px; /* Максимальная ширина (измените по необходимости) */
-    margin: 4px 0;
+    text-overflow: ellipsis; /* Добавление многоточия для скрытого текста */    
+    max-width: 300px; /* Максимальная ширина (измените по необходимости) */
+    margin: 4px 0;    
     font-size: 1em;
 }
 
@@ -255,18 +260,21 @@ form#utm-generator input:focus {
 
 
 form#utm-generator button {
-    padding: 15px; /* Отступ внутри кнопки */
-    background-color: #007BFF; /* Цвет фона кнопки */
-    color: white; /* Цвет текста кнопки */
-    border: none; /* Убираем обводку */
-    border-radius: 5px; /* Закругленные углы кнопки */
-    cursor: pointer; /* Указатель при наведении */
-    font-size: 16px; /* Размер шрифта кнопки */
+    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
+    padding: 10px 20px;    
+    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
+    border: 1px solid #afafaf; /* Добавляем границу */    
+    border-radius: 5px;
+    font-size: 16px;    
+    color: #afafaf; /* Цвет текста кнопки */
+    text-decoration: none;    
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
 }
 
 
 form#utm-generator button:hover {
-    background-color: #0056b3; /* Темнее цвет при наведении */
+    background-color: #ccc; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
 }
 
 
@@ -317,4 +325,13 @@ form#utm-generator button:hover {
         width: 100%; /* Кнопка занимает всю ширину */
         padding: 15px; /* Увеличиваем отступы */
     }
+}
+
+
+body {    
+    font-family: 'Roboto Mono', monospace; /* Применение шрифта ко всему сайту */
+}
+/* Применение шрифта к шапке и подвалу, если есть отдельные стили */
+.header, .footer {
+    font-family: 'Roboto Mono', monospace; /* Применение шрифта к шапке и подвалу */
 }

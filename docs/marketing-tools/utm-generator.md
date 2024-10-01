@@ -1,4 +1,9 @@
-﻿<div class="utm-generator">
+﻿---
+title: Генератор UTM-меток
+---
+
+
+<div class="utm-generator">
   <form id="utm-generator">
     <div class="input-group">
       <label for="url">Введите URL: 
