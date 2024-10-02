@@ -3,7 +3,7 @@
     <img src="assets/images/prof_photo.jpg" alt="Фото профиля">  
        <p> 
       <strong>Привет, я — Дмитрий, интернет-маркетолог.</strong><br> 
-      Это мое портфолио, здесь вы найдете полезные статьи о маркетинге, а также инструменты в разделе <em>Marketing Tools</em>. 
+      Это мое портфолио, здесь вы найдете полезные статьи и инструменты в разделе <em>Marketing Tools</em>. 
     </p>   
   </div>  
   <div class="social-links" style="text-align: left;"> 
