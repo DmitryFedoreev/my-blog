@@ -1,4 +1,4 @@
-site_name: 'DigitalHub' 
+site_name: 'GrowIt' 
 site_url: https://dmitry.github.io/blog/ 
 theme: 
   name: material 
@@ -7,6 +7,7 @@ theme:
     primary: blue gray 
     scheme: default 
     accent: Dark Blue 
+  favicon: assets/images/favicon.png
 
 nav:   
   - Главная: index.md 
