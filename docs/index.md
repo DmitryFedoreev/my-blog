@@ -1,23 +1,17 @@
-<div class="banner">  
-  <div class="profile-photo">  
-    <img src="assets/images/prof_photo.jpg" alt="Фото профиля">  
-       <p> 
-      <strong>Привет, я — Дмитрий, интернет-маркетолог.</strong><br> 
-      Это мое портфолио, здесь вы найдете полезные статьи и инструменты в разделе <em>Marketing Tools</em>. 
-    </p>   
-  </div>  
-  <div class="social-links" style="text-align: left;"> 
-  <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub"> 
-    <i class="fab fa-github"></i> 
-  </a> 
-  <a href="https://t.me/dmitryfedoreev" target="_blank" title="Telegram"> 
-    <i class="fab fa-telegram"></i> 
-  </a> 
-  <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера"> 
-    <i class="fas fa-laptop-code"></i> <!-- Используйте иконку, которая наиболее близка по смыслу --> 
-  </a> 
+<div class="banner">   
+  <div class="profile-photo">   
+    <img src="assets/images/prof_photo.jpg" alt="Фото профиля">   
+       <p>  
+      <strong>Привет, я — Дмитрий, интернет-маркетолог.</strong><br>  
+      Это мое портфолио, здесь вы найдете полезные статьи и инструменты в разделе <em>Marketing Tools</em>.  
+    </p>    
+  </div>   
+  <div class="social-links" style="text-align: left;">  
+    <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub">GITHUB</a>  
+    <a href="https://t.me/dmitryfedoreev" target="_blank" title="Telegram">TELEGRAM</a>  
+    <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера">ХАБР</a>  
+  </div> 
 </div>
-</div>  
  
 ## Недавние
  
