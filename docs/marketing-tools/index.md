@@ -9,3 +9,4 @@
 
 - [Генератор UTM-меток](utm-generator.md)
 - [Генератор кратких ссылок](short-url-generator.md)
+- [Нормализатор фраз](keyword_normalization_tool.md)

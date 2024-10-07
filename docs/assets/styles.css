@@ -335,3 +335,28 @@ body {
 .header, .footer {
     font-family: 'Roboto Mono', monospace; /* Применение шрифта к шапке и подвалу */
 }
+
+
+
+/* Основные стили для кнопок */
+button {
+    background-color: #007bff; /* Синий цвет фона */    
+    color: white; /* Белый цвет текста */
+    border: none; /* Убираем рамку */    
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px 20px; /* Внутренние отступы */    
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */    
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+/* Стили для кнопки при наведении */
+button:hover {
+    background-color: #0056b3; /* Более темный цвет при наведении */}
+/* Стили для текстового поля */
+textarea {    width: 100%; /* Ширина 100% */
+    height: 100px; /* Высота текстового поля */    
+    border: 1px solid #ccc; /* Серый цвет рамки */
+    border-radius: 5px; /* Закругленные углы */    
+    padding: 10px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */    
+}
