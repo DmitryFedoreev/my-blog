@@ -340,7 +340,8 @@ body {
 
 /* Основные стили для кнопок */
 button {
-    background-color: #007bff; /* Синий цвет фона */    
+    background-color: #007bff; /* Синий цвет фона */  
+    margin-bottom: 5px;  
     color: white; /* Белый цвет текста */
     border: none; /* Убираем рамку */    
     border-radius: 5px; /* Закругленные углы */
@@ -349,9 +350,12 @@ button {
     cursor: pointer; /* Указатель при наведении */    
     transition: background-color 0.3s; /* Плавный переход фона */
 }
+
 /* Стили для кнопки при наведении */
 button:hover {
-    background-color: #0056b3; /* Более темный цвет при наведении */}
+    background-color: #0056b3; /* Более темный цвет при наведении */
+}
+
 /* Стили для текстового поля */
 textarea {    width: 100%; /* Ширина 100% */
     height: 100px; /* Высота текстового поля */    
