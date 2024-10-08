@@ -20,7 +20,7 @@
     
     
       
-        <title>DigitalHub</title>
+        <title>GrowIt</title>
       
     
     
@@ -49,6 +49,8 @@
       <link rel="stylesheet" href="assets/styles.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DigitalHub" class="md-header__button md-logo" aria-label="DigitalHub" data-md-component="logo">
+    <a href="." title="GrowIt" class="md-header__button md-logo" aria-label="GrowIt" data-md-component="logo">
       
   <img src="assets/images/new_logo.png" alt="logo">
 
@@ -103,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DigitalHub
+            GrowIt
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -147,12 +149,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DigitalHub" class="md-nav__button md-logo" aria-label="DigitalHub" data-md-component="logo">
+    <a href="." title="GrowIt" class="md-nav__button md-logo" aria-label="GrowIt" data-md-component="logo">
       
   <img src="assets/images/new_logo.png" alt="logo">
 
     </a>
-    DigitalHub
+    GrowIt
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -208,7 +210,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Последнее
+      Недавние
     </span>
   </a>
   
@@ -333,80 +335,16 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
+    <li class="md-nav__item">
+      <a href="marketing-tools/" class="md-nav__link">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Marketing tools
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Marketing tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="marketing-tools/short-url-generator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Генератор кратких ссылок
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="marketing-tools/utm-generator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Генератор UTM-меток
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -438,7 +376,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Последнее
+      Недавние
     </span>
   </a>
   
@@ -461,28 +399,40 @@
 
   <h1>Главная</h1>
 
-<div class="banner">  
-  <div class="profile-photo">  
-    <img src="assets/images/prof_photo.jpg" alt="Фото профиля">  
-       <p> 
-      <strong>Привет, я — Дмитрий. Интернет-маркетолог, эксперт.</strong><br> 
-      Вместе разбираемся в маркетинговых хитростях и делаем результаты реальными. 
-    </p>   
-  </div>  
-  <div class="social-links" style="text-align: center;"> 
-  <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub"> 
-    <i class="fab fa-github"></i> 
-  </a> 
-  <a href="https://t.me/dmitryfedoreev" target="_blank" title="Telegram"> 
-    <i class="fab fa-telegram"></i> 
-  </a> 
-  <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера"> 
-    <i class="fab fa-hacker-news"></i> <!-- Используйте иконку, которая наиболее близка по смыслу --> 
-  </a> 
-</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" > 
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
+   m[i].l=1*new Date(); 
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} 
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
+
+   ym(98576815, "init", { 
+        clickmap:true, 
+        trackLinks:true, 
+        accurateTrackBounce:true, 
+        webvisor:true 
+   }); 
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98576815" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<div class="banner">   
+  <div class="profile-photo">   
+    <img src="assets/images/prof_photo.jpg" alt="Фото профиля">   
+       <p>  
+      <strong>Привет, я — Дмитрий, интернет-маркетолог.</strong><br>  
+      Это мое портфолио, здесь вы найдете полезные статьи и инструменты в разделе <em>Marketing Tools</em>.  
+    </p>    
+  </div>   
+  <div class="social-links" style="text-align: left;">  
+    <a href="https://github.com/DmitryFedoreev/" target="_blank" title="GitHub">GITHUB</a>  
+    <a href="https://t.me/dmitryfedoreev" target="_blank" title="Telegram">TELEGRAM</a>  
+    <a href="https://career.habr.com/dmitry_fedoreev" target="_blank" title="Хабр Карьера">ХАБР</a>  
+  </div> 
 </div>
 
-<h2 id="_1">Последнее</h2>
+<h2 id="_1">Недавние</h2>
 <div class="articles-grid">  
   <div class="article">  
     <img src="assets/images/post 1.JPG" alt="Обложка статьи 1">  

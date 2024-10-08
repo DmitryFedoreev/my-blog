@@ -2,7 +2,6 @@ site_name: 'GrowIt'
 site_url: https://dmitry.github.io/blog/ 
 theme: 
   name: material 
-  custom_dir: 'overrides'
   logo: 'assets/images/new_logo.png' 
   palette: 
     primary: blue gray 
