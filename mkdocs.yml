@@ -37,8 +37,9 @@ extra:
       analytics: 
         name: "Custom name"  # Здесь вы можете задать имя для cookie
     actions:
-      - accept
-      - manage
+      - accept: "Принять"
+      - reject: "Отклонить"
+      - manage: "Управлять"
   social: 
     - icon: fontawesome/brands/github 
       link: https://github.com/DmitryFedoreev/
