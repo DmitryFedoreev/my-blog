@@ -16,15 +16,10 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/98576815" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
 <!-- /Yandex.Metrika counter -->
 
-## Marketing Tools
-
-
+### Marketing Tools
 Добро пожаловать в раздел инструментов маркетинга! Здесь вы найдете различные инструменты, которые помогут вам в вашей маркетинговой деятельности.
 
-
-## Инструменты
-
-
+### Инструменты
 - [Генератор UTM-меток](utm-generator.md)
 - [Генератор кратких ссылок](short-url-generator.md)
 - [Нормализатор фраз](keyword_normalization_tool.md)
