@@ -182,14 +182,10 @@ h1 {
 
 /* Текстовое описание (название статьи) */
 .article h3 {
-    margin-top: 15px;
-    font-size: 1em;
+    font-size: 15px;
     text-align: left;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* Ограничение текста двумя строками */
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /* Кнопки и формы */

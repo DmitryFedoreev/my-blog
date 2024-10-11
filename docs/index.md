@@ -39,7 +39,7 @@
       <img src="assets/images/post 1.JPG" alt="Обложка статьи 1">
       <a href="articles/blog/articles1/" class="arrow">&#8594;</a> <!-- HTML код стрелки -->
     </div>
-    <h3><a href="articles/blog/articles1/">Как увеличить количество подписчиков на YouTube: личный опыт</a></h3>
+    <h3><a href="articles/blog/articles1/">Как увеличить количество подписчиков на YouTube</a></h3>
   </div>
 
   <div class="article">
