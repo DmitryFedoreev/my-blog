@@ -20,37 +20,6 @@
 }
 
 
-/* Кнопка "Показать все" */
-.view-all-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.view-all-btn {    
-    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
-    padding: 10px 20px;    
-    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
-    border: 1px solid #afafaf; /* Добавляем границу */    
-    border-radius: 5px;
-    font-size: 16px;    
-    color: #afafaf; /* Цвет текста кнопки */
-    text-decoration: none;    
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
-}
-.view-all-btn:hover {    
-    background-color: #ccc; /* Цвет фона при наведении */
-    color: #fff; /* Цвет текста при наведении */
-}
-
-
-/* Подключение шрифта Montserrat */
-.banner h2 {
-    text-align: left; /* Центрируем заголовок */
-    margin-bottom: 20px; /* Отступ снизу */
-}
-
-
 .url-generator {
     align-items: center; /* Центрирование по горизонтали */
     padding: 20px; /* Отступы внутри контейнера */
@@ -61,7 +30,7 @@
 
 .input-group {
     width: 100%; /* Ширина 100% для группировки элементов */
-    max-width: 500px; /* Ограничение максимальной ширины */
+    max-width: 1350px; /* Ограничение максимальной ширины */
     margin-bottom: 15px; /* Отступ снизу для группировки элементов */
 }
 
@@ -90,25 +59,6 @@
 }
 
 
-.btn {
-    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
-    padding: 10px 20px;    
-    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
-    border: 1px solid #afafaf; /* Добавляем границу */    
-    border-radius: 5px;
-    font-size: 16px;    
-    color: #afafaf; /* Цвет текста кнопки */
-    text-decoration: none;    
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
-}
-
-
-.btn:hover {
-    background-color: #ccc; /* Цвет фона при наведении */
-    color: #fff; /* Цвет текста при наведении */
-}
-
-
 .copy-icon {
     cursor: pointer; /* Курсор-указатель для иконки */
     margin-left: 10px; /* Отступ слева от ссылки */
@@ -124,8 +74,8 @@
 
 
 /* Основные стили */
-body {
-    font-family: 'Montserrat', sans-serif;
+body { 
+    font-family: 'Roboto Mono', monospace; /* Применение шрифта ко всему сайту *
     background-color: #FFFFFF; /* Цвет фона страницы – белый */
     margin: 0;
     padding: 0;
@@ -134,7 +84,7 @@ body {
 
 /* Универсальный контейнер для основного контента */
 .md-container, .articles-page, .utm-generator {
-    max-width: 1350px !important;  /* Одинаковая максимальная ширина для всех контейнеров */
+    max-width: 1350px;  /* Одинаковая максимальная ширина для всех контейнеров */
     background-color: #FFFFFF;  /* Цвет фона для контента - белый */
     margin: 0 auto;  /* Центрируем контент */
 }
@@ -166,12 +116,12 @@ body {
     margin-right: 10px;
     text-decoration: none;
     color: #1463D9;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
 .social-links a:hover {
-    color: #97accc; /* При наведении */
+    color: #395074; /* При наведении */
 }
 
 /* Скрыть заголовок страницы */
@@ -182,42 +132,61 @@ h1 {
 /* Сетка статей */
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Три столбца */
     gap: 20px;
-    max-width: 1350px; /* Одинаковая ширина для сетки */
+    max-width: 1350px;
 }
-
 
 /* Стили для каждой статьи */
 .article {
-    background-color: #ffffff; /* Белый фон для всех статей */
-    padding: 0px;
-    border-radius: 5px;
-    text-align: left;
-}
-
-
-/* Стили для изображений статей */
-.article img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
-    border-radius: 3px;
-    margin-bottom: 10px;
+    padding: 15px;
+    border: 2px solid #5f5f5f; /* Линия вокруг статьи */
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
 }
 
+/* Верхний блок с изображением и стрелкой */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* Заголовки статей */
+/* Изображение в левом верхнем углу */
+.article img {
+    width: 80px; /* Маленькое изображение */
+    height: 50px;
+    border-radius: 15px; /* Скругленные углы */
+    object-fit: cover;
+}
+
+/* Стрелка для перехода на статью */
+.article .arrow {
+    font-size: 24px;
+    font-weight: bold;
+    color: #464646;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Стрелка при наведении */
+.article .arrow:hover {
+    color: #498ed8;
+}
+
+/* Текстовое описание (название статьи) */
 .article h3 {
-    display: -webkit-box; /* Поддержка для многострочного текста */    
-    -webkit-box-orient: vertical; /* Устанавливаем ориентацию на вертикальную */
-    -webkit-line-clamp: 2; /* Ограничиваем количество отображаемых строк до 2 */    
-    overflow: hidden; /* Скрытие переполнения */
-    text-overflow: ellipsis; /* Добавление многоточия для скрытого текста */    
-    max-width: 300px; /* Максимальная ширина (измените по необходимости) */
-    margin: 4px 0;    
-    font-size: 1em;
+    font-size: 15px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
-
 
 /* Кнопки и формы */
 form#utm-generator {
@@ -309,12 +278,6 @@ form#utm-generator button:hover {
     }
 
 
-    .view-all-btn {
-        width: 100%; /* Кнопка занимает всю ширину */
-        padding: 15px; /* Увеличиваем отступы */
-    }
-
-
     .utm-generator input {
         width: 100%; /* Поля ввода занимают всю ширину */
         padding: 15px; /* Увеличиваем отступы */
@@ -328,39 +291,36 @@ form#utm-generator button:hover {
 }
 
 
-body {    
-    font-family: 'Roboto Mono', monospace; /* Применение шрифта ко всему сайту */
-}
 /* Применение шрифта к шапке и подвалу, если есть отдельные стили */
 .header, .footer {
     font-family: 'Roboto Mono', monospace; /* Применение шрифта к шапке и подвалу */
 }
 
 
-
 /* Основные стили для кнопок */
-button {
-    background-color: #007bff; /* Синий цвет фона */  
-    margin-bottom: 5px;  
-    color: white; /* Белый цвет текста */
-    border: none; /* Убираем рамку */    
-    border-radius: 5px; /* Закругленные углы */
-    padding: 10px 20px; /* Внутренние отступы */    
-    font-size: 16px; /* Размер шрифта */
-    cursor: pointer; /* Указатель при наведении */    
-    transition: background-color 0.3s; /* Плавный переход фона */
+.btn, .view-all-btn, button {
+    display: inline-block; /* Кнопка как блочный элемент, но не занимает всю ширину */
+    padding: 10px 20px;    
+    background-color: transparent; /* Убираем заливку, делаем фон прозрачным */
+    border: 1px solid #afafaf; /* Добавляем границу */    
+    border-radius: 5px;
+    font-size: 16px;    
+    color: #4b4b4b; /* Цвет текста кнопки */
+    text-decoration: none;    
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цвета фона и текста */
+    cursor: pointer; /* Указатель при наведении */
 }
 
 /* Стили для кнопки при наведении */
-button:hover {
-    background-color: #0056b3; /* Более темный цвет при наведении */
+.btn:hover, .view-all-btn:hover, button:hover {
+    background-color: #e0e0e0; /* Цвет фона при наведении */
+    color: #1463D9; /* Цвет текста при наведении */
 }
 
-/* Стили для текстового поля */
-textarea {    width: 100%; /* Ширина 100% */
-    height: 100px; /* Высота текстового поля */    
-    border: 1px solid #ccc; /* Серый цвет рамки */
-    border-radius: 5px; /* Закругленные углы */    
-    padding: 10px; /* Внутренние отступы */
-    font-size: 16px; /* Размер шрифта */    
+/* Стили для кнопок в мобильной версии */
+@media (max-width: 768px) {
+    .btn, .view-all-btn, button {
+        width: 100%; /* Кнопка занимает всю ширину */
+        padding: 15px; /* Увеличиваем отступы */
+    }
 }

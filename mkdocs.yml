@@ -22,26 +22,23 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
   - https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap
  
-copyright: Copyright &copy; 2024 Dmitry Fedoreev 
- 
+copyright: >
+  Copyright &copy; 2024 Dmitry Fedoreev - 
+  <a href="#__consent">Изменить настройки cookie</a>
+
 extra: 
   generator: 
     false 
   consent:
-    title: Cookie consent
+    title: "Согласие на использование файлов cookie"
     description: >- 
-
-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-
-plugins:  
-  - tags
-  - privacy
- 
-extra:
+      Мы используем файлы cookie для распознавания ваших повторных визитов и предпочтений, а также для измерения эффективности нашей документации и выяснения, находит ли пользователь то, что ищет. С вашим согласием вы помогаете нам улучшить нашу документацию.
+    cookies:
+      analytics: 
+        name: "Custom name"  # Здесь вы можете задать имя для cookie
+    actions:
+      - accept
+      - manage
   social: 
     - icon: fontawesome/brands/github 
       link: https://github.com/DmitryFedoreev/
@@ -49,4 +46,8 @@ extra:
       link: mailto:fedoreev.doc@gmail.com 
     - icon: fontawesome/brands/instagram 
       link: https://instagram.com/dmitry.fedoreev
+      
 
+plugins:  
+  - tags
+  - privacy
