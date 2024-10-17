@@ -330,24 +330,6 @@
 
   <h1>Генератор UTM-меток</h1>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" > 
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
-   m[i].l=1*new Date(); 
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} 
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
-
-   ym(98576815, "init", { 
-        clickmap:true, 
-        trackLinks:true, 
-        accurateTrackBounce:true, 
-        webvisor:true 
-   }); 
-</script>
-<noscript><div><img src="../../assets/external/mc.yandex.ru/watch/98576815.gif" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
 <div class="utm-generator">
   <form id="utm-generator">
     <div class="input-group">
@@ -358,31 +340,31 @@
     </div>
     <div class="input-group">
       <label for="utm_source">utm_source: 
-        <span class="tooltip" title="Источник трафика (например, google, newsletter).">?</span>
+        <span class="tooltip" title="Источник трафика (например google, yandex, vk.">?</span>
       </label>
       <input type="text" id="utm_source" placeholder="source" required>
     </div>
     <div class="input-group">
       <label for="utm_medium">utm_medium: 
-        <span class="tooltip" title="Тип трафика (например, cpc, email).">?</span>
+        <span class="tooltip" title="Тип трафика (например cpc, cpa.">?</span>
       </label>
       <input type="text" id="utm_medium" placeholder="medium" required>
     </div>
     <div class="input-group">
       <label for="utm_campaign">utm_campaign: 
-        <span class="tooltip" title="Название кампании для отслеживания.">?</span>
+        <span class="tooltip" title="Название кампании для отслеживания (например mebel_dlya_doma.">?</span>
       </label>
       <input type="text" id="utm_campaign" placeholder="campaign" required>
     </div>
     <div class="input-group">
       <label for="utm_term">utm_term: 
-        <span class="tooltip" title="Ключевые слова для платных поисковых объявлений.">?</span>
+        <span class="tooltip" title="Ключевые слова для платных поисковых объявлений (например купить_мебель).">?</span>
       </label>
       <input type="text" id="utm_term" placeholder="term">
     </div>
     <div class="input-group">
       <label for="utm_content">utm_content: 
-        <span class="tooltip" title="Используется для различия похожих объявлений.">?</span>
+        <span class="tooltip" title="Используется для различия похожих объявлений (например, zero_block240x60).">?</span>
       </label>
       <input type="text" id="utm_content" placeholder="content">
     </div>
@@ -407,28 +389,25 @@
     const utmTerm = document.getElementById('utm_term').value;
     const utmContent = document.getElementById('utm_content').value;
 
-
     // Проверяем, что обязательные поля заполнены
-    if (!url || !utmSource || !utmMedium || !utmCampaign) {
+    if (!url  !utmSource  !utmMedium || !utmCampaign) {
       alert('Пожалуйста, заполните все обязательные поля!');
       return;
     }
 
-
     // Формируем UTM-ссылку
-    let utmLink = `${url}?utm_source=${encodeURIComponent(utmSource)}&utm_medium=${encodeURIComponent(utmMedium)}&utm_campaign=${encodeURIComponent(utmCampaign)}`;
+    let utmLink = ${url}?utm_source=${encodeURIComponent(utmSource)}&utm_medium=${encodeURIComponent(utmMedium)}&utm_campaign=${encodeURIComponent(utmCampaign)};
 
     if (utmTerm) {
-      utmLink += `&utm_term=${encodeURIComponent(utmTerm)}`;
+      utmLink += &utm_term=${encodeURIComponent(utmTerm)};
     }
 
     if (utmContent) {
-      utmLink += `&utm_content=${encodeURIComponent(utmContent)}`;
+      utmLink += &utm_content=${encodeURIComponent(utmContent)};
     }
 
-
     // Выводим сгенерированную ссылку в блок #generated-link
-    document.getElementById('generated-link').innerHTML = `<strong>Сгенерированная ссылка:</strong><br><textarea id="generated-link-text" style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" readonly>${utmLink}</textarea>`;
+    document.getElementById('generated-link').innerHTML = <strong>Сгенерированная ссылка:</strong><br><textarea id="generated-link-text" style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" readonly>${utmLink}</textarea>;
   });
 </script>
 
@@ -524,11 +503,9 @@
 
 
 
-  
-
 <h4>Согласие на использование файлов cookie</h4>
 <p>Мы используем файлы cookie для распознавания ваших повторных визитов и предпочтений, а также для измерения эффективности нашей документации и выяснения, находит ли пользователь то, что ищет. С вашим согласием вы помогаете нам улучшить нашу документацию.</p>
-<input class="md-toggle" type="checkbox" id="__settings" checked>
+<input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
     
@@ -541,7 +518,7 @@
         <label class="task-list-control">
           <input type="checkbox" name="analytics" >
           <span class="task-list-indicator"></span>
-          Custom name
+          yandex
         </label>
       </li>
     
@@ -550,15 +527,21 @@
 <div class="md-consent__controls">
   
     
-    
-    
-  
+      <button class="md-button md-button--primary">Accept</button>
     
     
     
   
     
     
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
     
   
 </div>
